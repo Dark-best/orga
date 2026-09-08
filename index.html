@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>MindFlow — Cartes mentales</title>
+  <meta name="description" content="Cartes mentales interactives, multi-projets, propulsées par Supabase." />
+
+  <!-- Tailwind (Play CDN) — aucune étape de build requise pour GitHub Pages -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Configuration Supabase (à éditer) — chargée AVANT les modules -->
+  <script src="./config.js"></script>
+
+  <style>
+    html, body { height: 100%; margin: 0; }
+    body { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+           background:#f8fafc; -webkit-font-smoothing: antialiased; }
+    .mf-node .mf-text:empty::before { content: "…"; color:#cbd5e1; }
+    /* Barre de défilement discrète */
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-thumb { background:#cbd5e1; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

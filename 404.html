@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Redirection…</title>
+  <script>
+    // Fallback SPA GitHub Pages : convertit /…/invite/TOKEN en /…/#/invite/TOKEN
+    // et renvoie toute autre URL profonde vers l'index avec son hash préservé.
+    (function () {
+      var l = window.location;
+      var m = l.pathname.match(/^(.*)\/invite\/([^\/]+)\/?$/);
+      if (m) {
+        l.replace(m[1] + "/#/invite/" + m[2] + l.search);
+        return;
+      }
+      // Sinon, remonter à l'index du dépôt en conservant un éventuel hash.
+      var base = l.pathname.replace(/\/[^\/]*$/, "/");
+      l.replace(base + (l.hash || ""));
+    })();
+  </script>
+</head>
+<body>Redirection…</body>
+</html>
