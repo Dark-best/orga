@@ -106,7 +106,7 @@ Un panneau `#/admin` réservé à **un utilisateur désigné** permet de :
 
 ### Activation
 1. Exécutez [`supabase/admin.sql`](supabase/admin.sql) **après** `schema.sql`.
-2. Dans ce fichier, l'email admin est déjà `fuchsromain10@gmail.com` — modifiez-le si besoin, puis
+2. Dans ce fichier, l'email admin est déjà `xyz@gmail.com` — modifiez-le si besoin, puis
    ré-exécutez la ligne `update public.profiles set is_admin = true …`.
    > L'utilisateur doit s'être **inscrit au préalable** (le profil doit exister).
 3. Ajustez `DB_QUOTA_MB` dans [`config.js`](config.js) selon votre offre Supabase.
