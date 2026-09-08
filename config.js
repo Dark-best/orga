@@ -5,8 +5,8 @@
 //  (La clé anon est publique par conception : la sécurité repose sur la RLS.)
 // ============================================================================
 window.MINDFLOW_CONFIG = {
-  SUPABASE_URL: "https://VOTRE-PROJET.supabase.co",
-  SUPABASE_ANON_KEY: "VOTRE_CLE_ANON_PUBLIQUE",
+  SUPABASE_URL: "https://zitexjfauanppuwlmgdr.supabase.co",
+  SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InppdGV4amZhdWFucHB1d2xtZ2RyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg4NzQ3NjMsImV4cCI6MjEwNDQ1MDc2M30.LQRXJT3p21poyh79C7Xcv0MEmhvybaKg08x-6B8vcU0",
 
   // Nom du dépôt GitHub Pages (ex : "/mind"). Laissez "" si domaine racine.
   // Sert à construire les liens d'invitation partageables.
