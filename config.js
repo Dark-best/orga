@@ -10,7 +10,7 @@ window.MINDFLOW_CONFIG = {
 
   // Nom du dépôt GitHub Pages (ex : "/mind"). Laissez "" si domaine racine.
   // Sert à construire les liens d'invitation partageables.
-  BASE_PATH: "",
+  BASE_PATH: "/orga",
 
   // Quota base de données (Mo) pour la jauge d'usage du panneau admin.
   // Plan gratuit Supabase = 500 Mo. Ajustez selon votre offre.
